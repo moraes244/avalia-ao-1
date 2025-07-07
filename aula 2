@@ -1,0 +1,87 @@
+    Baixe a JDK (ex: OpenJDK ou Oracle JDK) do site oficial ou Adoptium
+    javarush.com+15conceitos.tech+15medium.com+15
+    .
+
+    Execute o instalador .exe e siga os passos até a conclusão.
+
+    Configure as variáveis de ambiente:
+
+        Crie JAVA_HOME apontando para a pasta da JDK.
+
+        Adicione %JAVA_HOME%\bin ao PATH
+        conceitos.tech
+        aartedeprogramar.tech+2medium.com+2conceitos.tech+2
+        aartedeprogramar.tech+1dev.to+1
+        .
+
+    Verifique: abra o Prompt e digite java -version. Deve mostrar a versão instalada
+    reddit.com+2aartedeprogramar.tech+2conceitos.tech+2
+    .
+
+No Linux (Debian/Ubuntu):
+
+sudo apt update
+sudo apt install openjdk-17-jdk -y
+java -version
+
+No macOS:
+
+brew install openjdk@17
+
+Depois adicione ao .zshrc ou .bashrc:
+
+export JAVA_HOME=$(brew --prefix openjdk@17)
+export PATH="$JAVA_HOME/bin:$PATH"
+java -version
+
+aartedeprogramar.tech+5conceitos.tech+5reddit.com+5
+2. Instalar o IntelliJ IDEA (edição Community)
+
+    Acesse o site da JetBrains e baixe a edição Community (gratuita)
+    reddit.com+10programicio.com+10reddit.com+10
+    .
+
+    No Windows, execute o instalador (.exe). No macOS, abra o .dmg e arraste para Aplicativos. No Linux, extraia o tar.gz e execute idea.sh
+    javarush.com+15devandroid.com.br+15medium.com+15
+    .
+
+    Inicie o IntelliJ pela primeira vez, aceite os termos e defina temas/plugins conforme desejar
+    medium.com+15devandroid.com.br+15reddit.com+15
+    .
+
+3. Criar o projeto Java no IntelliJ
+
+    Clique em New Project.
+
+    Selecione Java, escolha o JDK instalado.
+
+    Nomeie o projeto (ex.: MeuPrimeiroProjeto) e defina diretório
+    reddit.com+13programicio.com+13medium.com+13
+    javarush.com
+    .
+
+4. Criar a classe com método main
+
+    No painel Project → src, clique com botão direito → New → Java Class.
+
+    Informe um nome, por exemplo: Main.
+
+    Insira o seguinte código:
+
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println("Seu Nome Aqui");
+        }
+    }
+
+    Adaptado dos tutoriais
+    reddit.com+15programicio.com+15medium.com+15
+    .
+
+5. Executar o projeto
+
+    Clique no ícone ▶️ ao lado da classe Main, ou use Run → Run ‘Main’ ou o atalho Shift + F10
+    alura.com.br+1medium.com+1
+    .
+
+    A frase "Seu Nome Aqui" será exibida no console da IDE.
